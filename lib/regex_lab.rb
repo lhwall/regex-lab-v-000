@@ -14,10 +14,7 @@ end
 end
 
 def words_five_letters_long(text)
- temp_array = text.scan(/[^a-zA-Z][a-zA-Z]{5}\s/).collect do |i|
- i.strip 
-end
-binding.pry
+ text.scan(/\b[a-zA-z]{5}\b/)
 end
 
 words_five_letters_long("extreme briny crepe parking snaps grouping snafu round dog be fork spoon")
